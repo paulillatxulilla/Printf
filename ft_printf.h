@@ -6,13 +6,14 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 17:06:33 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/18 16:03:15 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/18 16:43:49 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 # include <stdarg.h>
+# include <unistd.h>
 
 int	ft_printf(char const *str, ...);
 int	ft_percent(va_list args, char str);

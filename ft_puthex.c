@@ -6,35 +6,20 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 18:37:43 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/18 16:01:32 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/18 18:39:20 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include "ft_printf.h"
 
-static int	ft_strlen(char *str)
+int	ft_puthex(unsigned long x, char *base)//%x%X
 {
-	int	len;
+	int count;
 
-	len = 0;
-	if (!str)
-		return (NULL);
-	while (str[len])
-		len++;
-	return (len);
-}
-
-int	ft_puthex(unsigned long x, char str)//%x%X
-{
-	char	*base;
-
-	if (str = 'x')
-		base = "0123456789abcdef";
-	else
-		base = "0123456789ABCDEF";
+	count = 0;
 	if (x >= 16)
-		ft_puthex(x / 16, str);
-	ft_putchar(base[x % 16]);
-	return (write(1, x, ft_strlen(x)));
+		count = count + ft_puthex(x / 16, base);
+	count = count + ft_putchar(base[x % 16]);
+	return (count);
 }

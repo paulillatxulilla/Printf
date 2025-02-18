@@ -6,27 +6,30 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 18:26:55 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/18 15:59:03 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/18 18:44:48 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdarg.h>
+#include "ft_printf.h"
 
 int	ft_percent(va_list args, char str)
 {
 	if (str == 'c')
 		return (ft_putchar(va_arg(args, char)));
-	if (str == 's')
+	else if (str == 's')
 		return (ft_putstr(va_arg(args, char *)));
-	if (str == 'p')
+	else if (str == 'p')
 		return (ft_putpointer(va_arg(args, void *)));
-	if (str == 'd' || str == 'i')
+	else if (str == 'd' || str == 'i')
 		return (ft_putnbr(va_arg(args, int)));
-	if (str == 'u')
+	else if (str == 'u')
 		return (ft_putunsigned(va_arg(args, unsigned int)));
-	if (str == 'X' || str == 'x')
-		return (ft_puthex(va_arg(args, unsigned long)));
-	if (str == '%')
+	else if (str == 'x')
+		return (ft_puthex(va_arg(args, unsigned long), "0123456789abcdef"));
+	else if(str == 'X')
+		return (ft_puthex(va_arg(args, unsigned long), "0123456789ABCDEF"));
+	else if (str == '%')
 		return (ft_putchar('%'));
 	return (0);
 }

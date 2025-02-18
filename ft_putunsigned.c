@@ -6,7 +6,7 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 17:21:31 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/18 16:03:34 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/18 18:37:14 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,11 @@
 
 int	ft_putunsigned(unsigned int u)//%u
 {
+	int count;
+
+	count = 0;
 	if (u >= 10)
-	{
-		ft_putnbr(u / 10);
-		ft_putnbr(u % 10);
-	}
-	else
-		ft_putchar(u + '0');
-	return (write(1, u, 11));
+		count = count + ft_putnbr(u / 10);
+	count = count + ft_putchar((u % 10) + 48);
+	return (count);
 }

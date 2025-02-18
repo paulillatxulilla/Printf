@@ -6,11 +6,12 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 17:39:05 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/18 15:52:43 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/18 18:43:36 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <unistd.h>
 
 int	ft_putchar(char c)//%c
 {
