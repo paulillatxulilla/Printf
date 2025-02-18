@@ -6,7 +6,7 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 17:21:31 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/18 18:37:14 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/18 18:52:48 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_putunsigned(unsigned int u)//%u
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (u >= 10)

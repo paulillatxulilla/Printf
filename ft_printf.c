@@ -6,7 +6,7 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 17:06:37 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/18 17:27:35 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/18 18:52:22 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 int	ft_printf(char const *str, ...)
 {
 	va_list	args;
-	int 	count;
+	int		count;
 
 	count = 0;
 	va_start(args, str);
@@ -28,7 +28,7 @@ int	ft_printf(char const *str, ...)
 			count = count + ft_percent(args, *str);
 		}
 		else
-			count = count + ft_putchar(*str);//putchar = write, sumas el valor que write devuleve
+			count = count + ft_putchar(*str);
 		count++;
 	}
 	va_end(args);

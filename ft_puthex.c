@@ -6,7 +6,7 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 18:37:43 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/18 18:39:20 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/18 18:59:37 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	ft_puthex(unsigned long x, char *base)//%x%X
 {
-	int count;
+	int		count;
 
 	count = 0;
 	if (x >= 16)

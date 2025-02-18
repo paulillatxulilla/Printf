@@ -6,7 +6,7 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 17:53:47 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/18 17:32:23 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/18 18:52:36 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	ft_putstr(char *str)//%s
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (!str)
