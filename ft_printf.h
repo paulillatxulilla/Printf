@@ -6,7 +6,7 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 17:06:33 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/18 19:02:33 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/18 19:15:54 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ int	ft_putstr(char *str);
 int	ft_putpointer(void *p);
 int	ft_putnbr(int i);
 int	ft_putunsigned(unsigned int u);
-int	ft_puthex(unsigned long x, char *base);
+int	ft_puthex(size_t x, char *base);
 #endif

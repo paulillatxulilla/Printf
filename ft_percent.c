@@ -6,7 +6,7 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 18:26:55 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/18 19:00:37 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/18 19:15:19 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ int	ft_percent(va_list args, char str)
 	else if (str == 'u')
 		return (ft_putunsigned(va_arg(args, unsigned int)));
 	else if (str == 'x')
-		return (ft_puthex(va_arg(args, unsigned long), "0123456789abcdef"));
+		return (ft_puthex(va_arg(args, unsigned int), "0123456789abcdef"));
 	else if (str == 'X')
-		return (ft_puthex(va_arg(args, unsigned long), "0123456789ABCDEF"));
+		return (ft_puthex(va_arg(args, unsigned int), "0123456789ABCDEF"));
 	else if (str == '%')
 		return (ft_putchar('%'));
 	return (0);

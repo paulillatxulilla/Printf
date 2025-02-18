@@ -6,13 +6,13 @@
 #    By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/12 17:06:40 by padan-pe          #+#    #+#              #
-#    Updated: 2025/02/18 17:16:39 by padan-pe         ###   ########.fr        #
+#    Updated: 2025/02/18 19:12:21 by padan-pe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 CC = cc 
-C_FLAGS = -Wall -Wextra -Werror
+C_FLAGS = -Wall -Wextra -Werror -g3
 INCLUDE = -I. #directorio de cabeceras (dir actual)
 SRC_FILES = ft_printf.c ft_percent.c ft_putchar.c ft_puthex.c ft_putnbr.c ft_putpointer.c ft_putstr.c ft_putunsigned.c
 OBJ_FILES = $(SRC_FILES:%.c=%.o)
