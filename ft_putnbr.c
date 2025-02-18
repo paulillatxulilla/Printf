@@ -6,23 +6,23 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 17:01:09 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/16 18:15:14 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/18 15:58:22 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include "ft_printf.h"
 
-static int  ft_strlen(char *str)
+static int	ft_strlen(char *str)
 {
-    int len;
-	
+	int	len;
+
 	len = 0;
-	if(!str)
+	if (!str)
 		return (NULL);
-    while (str[len])
-        len++;
-    return (len);
+	while (str[len])
+		len++;
+	return (len);
 }
 
 int	ft_putnbr(int i)//%i %d
