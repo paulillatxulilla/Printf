@@ -6,7 +6,7 @@
 /*   By: padan-pe <padan-pe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 17:06:37 by padan-pe          #+#    #+#             */
-/*   Updated: 2025/02/18 19:09:17 by padan-pe         ###   ########.fr       */
+/*   Updated: 2025/02/20 18:31:54 by padan-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,15 @@ int	ft_printf(char const *str, ...)
 	va_end(args);
 	return (count);
 }
+/*
+int main (void)
+{
+	int n = -2147483649;
+	char c = 'a';
+	char *s= NULL;
+	
+	printf("%d , %s , %c , %x , %X , %p , %u \n", n, s, c, n, n, s, n);
+	ft_printf("%d , %s , %c , %x , %X , %p , %u \n", n, s, c, n, n, s, n);
+	
+	
+}*/
